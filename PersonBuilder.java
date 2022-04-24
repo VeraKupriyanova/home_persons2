@@ -10,8 +10,8 @@ public class PersonBuilder {
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Имя не указано");
         } else {
-			this.name = name;
-			   }
+            this.name = name;
+        }
         return this;
     }
 
@@ -19,8 +19,8 @@ public class PersonBuilder {
         if (surname == null || surname.isEmpty()) {
             throw new IllegalArgumentException("Фамилия не указана");
         } else {
-			this.surname = surname;
-			   }
+            this.surname = surname;
+        }
         return this;
     }
 
@@ -28,8 +28,8 @@ public class PersonBuilder {
         if (age < 0) {
             throw new IllegalArgumentException("Возраст не может быть пустым ");
         } else {
-			this.age = age;
-		       }
+            this.age = age;
+        }
         return this;
     }
 
@@ -45,8 +45,8 @@ public class PersonBuilder {
         if (age < 0) {
             person = new Person(name, surname);
         } else {
-			person = new Person(name, surname, age);
-		       }
+            person = new Person(name, surname, age);
+        }
         person.setAddress(address);
         return person;
     }
